@@ -1,0 +1,25 @@
+<div class="flex justify-center  mx-auto ">
+    <div class="bg-secondary p-2 mt-8  w-96 h-96 rounded shadow-lg ">
+        <form class="flex flex-col  gap-6" action="/login" method="POST">
+            <h3 class="text-center text-2xl ">Login</h3>
+            <div class="flex flex-col gap-2">
+                <label for="email">
+                    Email:
+                </label>
+                <input class="bg-gray-300 text-gray-900 rounded" type="email" id="email" name="email"
+                    placeholder="Email">
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="password">
+                    Password:
+                </label>
+                <input class="bg-gray-300 text-gray-900 rounded" type="password" id="password" name="password"
+                    placeholder="Senha">
+            </div>
+            <div class="text-center">
+                <input class="w-full rounded p-2  bg-btn-primary hover:bg-btn-secondary" type="submit" value="Login">
+            </div>
+
+        </form>
+    </div>
+</div>

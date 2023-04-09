@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/modal.js" defer></script>
+
+
+    <title>Carfy</title>
+</head>
+
+<body>
+    <%- include("../components/message.ejs") %>
+        <div class="2xl:container mx-auto bg-primary w-screen h-screen  text-gray-100 flex">
+
+            <div class="flex bg-secondary px-1">
+                <%- include ("./sidebar.ejs") %>
+            </div>
+            <div class="container px-2 flex-1 bg-secondary">
+
+                <%- body %>
+
+            </div>
+        </div>
+
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<div class="flex flex-col bg-primary h-full">
+    <div class="text-center p-2 h-14">
+        <h2>Vendas</h2>
+    </div>
+    <div class="p-2">
+        <label for="">Status</label>
+        <select class="form-select p-1 w-32 bg-slate-700 rounded" name="status" id="status">
+            <option value="abertos">Em Aberto</option>
+            <option value="fechados">Fechados</option>
+        </select>
+    </div>
+    <div class="p-2">
+        <button type="button" class="px-3 py-2 text-xs font-medium text-center
+       text-gray-200 bg-btn-secondary rounded-lg hover:bg-btn-primary 
+       focus:ring-4 focus:outline-none focus:ring-btn-secondary" id="btnShow">
+            Nova Venda
+        </button>
+    </div>
+    <section class="p-2">
+        <!-- table  -->
+        <%- include('./table.ejs') %>
+    </section>
+    <%- include('./modalCreateVenda.ejs') %>
+</div>
+
+ 

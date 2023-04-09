@@ -1,0 +1,46 @@
+<nav class="flex flex-col p-1 justify-between mx-0 bg-primary h-screen">
+  <header class=" h-12">
+    <a href="/dashboard">
+      <img class="h-full" src="./images/logo.png" alt="Logo Carfy">
+    </a>
+  </header>
+  <hr />
+
+  <ul class="flex flex-col mt-2 gap-2 flex-1">
+    <li class="hover:bg-btn-secondary rounded-md p-3 cursor-pointer">
+      <a href="/dashboard">Dashboard</a>
+    </li>
+    <li class="hover:bg-btn-secondary rounded-md p-3  cursor-pointer">
+      <div></div>
+      <a href="/vendas">Vendas</a>
+
+    </li>
+    <li class="hover:bg-btn-secondary rounded-md p-3  cursor-pointer">
+      Clientes
+    </li>
+    <li class="hover:bg-btn-secondary rounded-md p-3  cursor-pointer">
+      Transportadora
+    </li>
+    <li class="hover:bg-btn-secondary rounded-md p-3  cursor-pointer">
+      Fornecedores
+    </li>
+    <li class="hover:bg-btn-secondary rounded-md p-3  cursor-pointer">
+      Garantia
+    </li>
+  </ul>
+
+  <footer class="">
+    <hr />
+
+    <p class="font-bold mt-2">
+      <% if(user) { %>
+        <%= user %>
+          <% } else { %>
+            Convidado
+            <% } %>
+    </p>
+    <div>
+      <a class="text-lg hover:text-btn-secondary" href="/logout">Sair</a>
+    </div>
+  </footer>
+</nav>
